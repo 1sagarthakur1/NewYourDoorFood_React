@@ -1,0 +1,106 @@
+.search_product_main_container{
+    height: 120px;
+    width: calc(100% - 100px);
+    border: 1px double rgb(240, 172, 172);
+    margin:10px 50px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 50px rgba(255, 0, 0, 0.326);
+    background:linear-gradient(to top left, #FF0000 -100%, #ffffff 58% );
+
+}
+.search_product{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* flex-grow: 1; */
+    /* justify-content: center; */
+}
+.image_div{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_div>img{
+    width: 100%;
+    border-radius: 5px;
+}
+.details_div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    /* width: 100%; */
+}
+.details_div>h2{
+    color: #990000;
+    font-family: "Poetsen One", sans-serif;
+}
+.details_div>p{
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.details_div>h3{
+    color: rgb(53, 52, 52);
+}
+.details_div>div{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+}
+@media screen and (max-width:700px){
+    .search_product_main_container{
+        margin:10px 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .search_product_main_container{
+        height: 70px;
+        padding: 5px;
+        width: calc(100% - 20px);
+    }
+    .image_div{
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image_div>img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .details_div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        /* width: 100%; */
+    }
+    .details_div>h2{
+        color: #990000;
+        font-family: "Poetsen One", sans-serif;
+        font-size: 3vw;
+    }
+    .details_div>p{
+        color: gray;
+        font-family: 'Courier New', Courier, monospace;
+    
+    }
+    .details_div>h3{
+        color: rgb(53, 52, 52);
+        font-size: 2vw;
+    }
+}

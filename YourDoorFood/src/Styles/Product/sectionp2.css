@@ -1,0 +1,134 @@
+.sectionp2_container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.sectionp2_desgin{
+    height: 35vw;
+    /* width: calc(100% -120px); */
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+.sectionp2_desgin>div:nth-child(1){
+    height: 30%;
+    width: 30%;
+    left:0;
+    background-color:white;
+    display: flex;
+    justify-content: flex-end;
+    border-top-right-radius: 100%;
+    position: absolute;
+}
+
+.sectionp2_desgin>div:nth-child(2){
+    height: 100%;
+    width: 90%;
+    background-color:#E96B6B;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom-left-radius: 100%;
+}
+
+.sectionp2_desgin>div>div{
+    height: 100%;
+    width: 90%;
+    background-color:white;
+    border-bottom-left-radius: 100%;
+}
+.sectionp2_containt{
+    position: absolute;
+    top: 0;
+    margin:0px 50px 0px 50px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px double rgb(214, 207, 207);
+    display: flex;
+    justify-content: 
+    space-between;
+    flex-direction: column;
+    width:calc(100% - 120px);
+    flex-grow: 1;
+}
+.sectionp2_containt>h1{
+    font-size:2vw;
+    font-family: "Poetsen One", sans-serif;
+    color:#990000;
+}
+.sectionp2_containt>p{
+    width: calc(100%-10px);
+    color: gray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.paymentDetails_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+.codImg{
+    border-radius:20px;
+    height:140px;
+    width:240px;
+    border: 1px solid rgb(218, 212, 212);
+}
+.payButt{
+    height: 50px;
+    width: 15vw;
+    background-color: #990000;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin:5px 0px;
+}
+.pymentButton_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width:1000px){
+    .sectionp2_desgin{
+        height: 50vw;
+    }
+}
+@media screen and (max-width:880px){
+    .sectionp2_desgin{
+        height: 70vw;
+    }
+}
+@media screen and (max-width:750px){
+    .sectionp2_desgin{
+        height: 90vw;
+    }
+}
+@media screen and (max-width:620px){
+    .sectionp2_desgin{
+        height: 140vw;
+    }
+}
+@media screen and (max-width:600px) {
+
+    .sectionp2_containt{
+        position: absolute;
+        top: 0;
+        margin:0px 10px 0px 10px;
+        width:calc(100% - 40px);
+    }
+    .sectionp2_containt>h1{
+        font-size:5vw;
+        font-family: "Poetsen One", sans-serif;
+        color:#990000;
+    }
+}
+@media screen and (max-width:540px){
+    .sectionp2_desgin{
+        height: 200vw;
+    }
+}

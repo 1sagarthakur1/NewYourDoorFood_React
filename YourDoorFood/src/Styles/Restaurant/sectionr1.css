@@ -1,0 +1,216 @@
+.restaurant{
+    background-color: red;
+    height: 100vh;
+}
+h4{
+    font-size: 1vw;
+}
+p{
+    font-size: .9vw;
+}
+.sectionr1_maincontainer{
+    /* margin-top: 200px; */
+    
+}
+.left_imageContainer{
+    height: 20vw;
+    min-width: 35vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: 5px solid white;
+}
+.left_imageContainer>div{
+    height: 99%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.restaurant_image{
+    border-radius: 50%;
+    height: 100%;
+    width: 80%;
+}
+.sectionr1_desgin{
+    width: 100%;
+    height:35vw;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.sectionr1_desgin>div{
+    height: 100%;
+    width: 90%;
+    background-color:#E96B6B;
+    display: flex;
+    justify-content: flex-end;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    /* border-top-right-radius: 50%; */
+    border-bottom-right-radius: 100%;
+}
+
+.sectionr1_desgin>div>div{
+    height: 100%;
+    width: 90%;
+    background-color:white;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    /* border-top-right-radius: 70%; */
+    border-bottom-right-radius: 100%;
+}
+
+.sectionr1_containt{
+    position: absolute;
+    top: 0;
+    /* width: 100vw; */
+    margin:70px 50px 0px 50px;
+    /* background-color: rgba(255, 255, 255, 0.836); */
+    border-radius: 10px;
+    padding: 10px;
+    /* border: 1px double rgb(214, 207, 207); */
+    display: flex;
+    align-items: center;
+    justify-content: 
+    space-around;
+    /* width:calc(100% - 120px); */
+    flex-grow: 1;
+    gap: 20px;
+}
+.sectionr1_details{
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border: 1px double rgb(214, 207, 207);
+    border-radius:20px;
+    padding: 10px;
+}
+.restaurant_name{
+    font-size: 3vw;
+    font-family: "Kaushan Script", cursive;
+    color: #990000;
+}
+.description{
+    color: gray;
+    /* font-size: .9vw; */
+}
+.address_container{
+    margin: 10px 0px;
+}
+.address_container>h5{
+    color: rgb(82, 80, 80);
+}
+.address_container>p{
+    color: gray;
+    /* font-size: .9vw; */
+}
+.bottom_leftContainer{
+    display: flex;
+}
+.line{
+    width: 1px;
+    background-color: gray;
+    /* flex-grow: 1; */
+    margin: 10px;
+}
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 20px;
+    /* height: 200px; */
+}
+.timing_container>div{
+    display: flex;
+    /* gap: 50px; */
+    justify-content: space-between;
+}
+
+.current_satuation{
+    color: green;
+}
+hr{
+    margin: 10px 0px;
+}
+.UserComment{
+    display: flex;
+    background-color: red;
+    padding: 3px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    max-width: 500px;
+    font-size: .9vw;
+    overflow: hidden;
+}
+.UserComment>img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+.reating{
+    margin: 5px 0px;
+}
+.reating>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0px;
+}
+.reating>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width:750px){
+    .sectionr1_containt{ 
+        margin:70px 20px 0px 20px;
+    }
+    .left_imageContainer{
+        height: 30vw;
+    }
+    h4{
+        font-size: 2vw;
+    }
+    p{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:600px){
+    .sectionr1_containt{
+        flex-direction: column;
+        margin:50px 5px 0px 5px;
+    }
+    h4{
+        font-size: 3.5vw;
+    }
+    p{
+        font-size: 2.3vw;
+    }
+    .left_imageContainer{
+        height: 30vw;
+        width: 80vw;
+    }
+    .restaurant_name{
+        font-size: 5vw;
+    }
+    .sectionr1_desgin{
+        height: 70vh;
+    }
+}
+@media screen and (max-width:450px){
+    .left_imageContainer{
+        height: 50vw;
+        width: 80vw;
+    }
+}

@@ -1,0 +1,201 @@
+.sectionp1_container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.sectionp1_desgin{
+    /* width: calc(100% -120px); */
+    height:35vw;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+.sectionp1_desgin>div{
+    height: 100%;
+    width: 90%;
+    background-color:#E96B6B;
+    display: flex;
+    justify-content: flex-end;
+    border-top-left-radius: 100%;
+}
+
+.sectionp1_desgin>div>div{
+    height: 100%;
+    width: 90%;
+    background-color:white;
+    border-top-left-radius: 100%;
+}
+.sectionp1_containt{
+    position: absolute;
+    top: 0;
+    margin:70px 50px 0px 50px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px double rgb(214, 207, 207);
+    display: flex;
+    justify-content: 
+    space-between;
+    width:calc(100% - 120px);
+    flex-grow: 1;
+}
+
+.sectionp1_leftSide>h1{
+    font-size:3vw;
+    font-family: "Poetsen One", sans-serif;
+    color:#990000;
+
+}
+.sectionp1_leftSide>h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size:2vw;
+}
+
+.sectionp1_leftSide>p{
+    font-weight: 200;
+    color:gray;
+    font-family: "Roboto", sans-serif;
+    font-size:1.5vw;
+    margin: 10px 0px;
+}
+.sectionp1_rightSide>img{
+    width: 40vw;
+}
+.sectionp1_restaurant{
+    height:10vw;
+    flex-grow: 1;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+.sectionp1_restaurant>h2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+}
+.sectionp1_restaurant>p{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1vw;
+}
+.sectionp1_button{
+    display: flex;
+    gap: 20px;
+}
+.sectionp1_button>button{
+    height: 50px;
+    width: 15vw;
+    background-color: #990000;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin:5px 0px;
+}
+.sectionp1_button>button:hover{
+    background-color:red;
+}
+
+@media screen and (max-width:1300px) {
+    .sectionp1_desgin{
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .sectionp1_desgin{
+        height: 45vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .sectionp1_desgin{
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sectionp1_desgin{
+        height: 58vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .sectionp1_containt{
+        position: absolute;
+        top: 0;
+        margin:70px 10px 0px 10px;
+        width:calc(100% - 40px);
+    }
+
+    .sectionp1_button>button{
+        height: 30px;
+        width: 20vw;
+        background-color: #990000;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        margin:5px 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sectionp1_desgin{
+        height: 120vw;
+    }
+    .sectionp1_containt{
+       display: inline-block;
+    }
+    .sectionp1_leftSide>h1{
+        font-size:5vw;
+        font-family: "Poetsen One", sans-serif;
+        color:#990000;
+    
+    }
+    .sectionp1_leftSide>h3{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size:3vw;
+    }
+    
+    .sectionp1_leftSide>p{
+        font-weight: 200;
+        color:gray;
+        font-family: "Roboto", sans-serif;
+        font-size:2.5vw;
+        margin: 10px 0px;
+    }
+    .sectionp1_rightSide{
+        display: flex;
+        justify-content: center;
+    }
+    .sectionp1_rightSide>img{
+        width: 60vw;
+    }
+
+    .sectionp1_restaurant{
+        height:14vw;
+    }
+    .sectionp1_restaurant>h2{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 4vw;
+    }
+    .sectionp1_restaurant>p{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .sectionp1_desgin{
+        height: 130vw;
+    }
+}
+@media screen and (max-width:300px) {
+    .sectionp1_desgin{
+        height: 140vw;
+    }
+}

@@ -1,0 +1,121 @@
+.section1_mainContainer{
+    position: relative;
+}
+.div1disgin{
+    height: 40vw;
+    width: 100%;
+    background-color: red;
+}
+.div1disgin>div{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(233, 107, 107);
+    border-bottom-right-radius:100%;
+}
+.div1disgin>div>div{
+    height: 100%;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius:100%;
+}
+
+.section1_containtContainer{
+    height: 30vw;
+    width: calc(100%-200px);
+    position: absolute;
+    display: flex;
+    top: 0;
+    z-index: 4;
+    padding: 100px 100px 0px 100px;
+    /* background-color: rgba(240, 205, 9, 0.425); */
+}
+
+.heading_containt>h1{
+    font-size: 6vw;
+    color: red;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+}
+
+.heading_containt>h2{
+    font-size: 3vw;
+    font-family: "Kaushan Script", cursive;
+    color: #990000;
+}
+.heading_containt>p{
+    font-size: 1vw;
+    width: 60%;
+    color: orange;
+}
+.heading_containt>p::first-letter{
+    font-size: 3vw;
+}
+.heading_Image>img{
+    width:30vw;
+}
+
+@media screen and (max-width:900px) {
+    .section1_containtContainer{
+        width: calc(100%-100px);
+        padding: 100px 50px 0px 50px;
+    }
+}
+@media screen and (max-width:600px) {
+    .section1_containtContainer{
+        width: calc(100%-100px);
+        padding: 60px 50px 0px 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .div1disgin{
+        height: 100vw;
+    }
+    .section1_containtContainer{
+        flex-direction: column;
+        width: calc(100%);
+        height: 90vw;
+        padding:50px 0px 0px 0px;
+    }
+    .heading_Image{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin:10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        /* width:30vw; */
+    }
+    .heading_Image>img{
+        width:55vw;
+    }
+    .heading_containt{
+        margin: 10px;
+    }
+    .heading_containt>h1{
+        font-size: 9vw;
+    }
+    
+    .heading_containt>h2{
+        font-size: 5vw;
+        width:70%;
+    }
+    .heading_containt>p{
+        font-size: 3vw;
+        width: 50%;
+        margin-top:10px;
+    }
+    .heading_containt>p::first-letter{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .section1_containtContainer{
+        flex-direction: column;
+        width: calc(100%);
+        height: 85vw;
+        padding:50px 0px 0px 0px;
+    }
+}

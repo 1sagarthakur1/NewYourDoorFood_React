@@ -1,0 +1,103 @@
+.itemCart_container{
+    height: 155px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    overflow: hidden;
+    transition: .5s;
+}
+.itemCart_container:hover{
+    transition: .5s;
+    height:230px;
+}
+.itemContaint>h4{
+    margin: 0;
+    padding: 0;
+}
+.itemContaint>div>h3{
+    margin: 0;
+    padding:0;
+}
+.itemCart_container>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.itemContaint{
+    padding: 0px 5px 5px;
+}
+.item_rating{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.itemCart_buttons{
+    margin-top: 3px;
+    display: flex;
+    justify-content:space-between;
+}
+.itemCart_buttons>button{
+    background-color:#990000;
+    color: white;
+    padding: 3px 10px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.itemCart_buttons>button:hover{
+    background-color:red;
+}
+.details>hr{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:500px) {
+    .itemCart_container{
+        height: 110px;
+        width: 120px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 10px gray;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .itemCart_container:hover{
+        transition: .5s;
+        height:200px;
+    }
+}
+@media screen and (max-width:450px) {
+    .itemCart_container{
+        height: 110px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 10px gray;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .itemContaint>h4{
+       font-size:2.5vw;
+    }
+    .itemContaint>div>h3{
+        font-size:3vw;
+    }
+    .itemCart_container:hover{
+        transition: .5s;
+        height:200px;
+    }
+    .item_rating{
+        display: flex;
+        align-items: flex-end;
+        gap:2px;
+        color: gray;
+        margin: 0px 0px 3px 0px;
+        /* border: 1px solid black; */
+    }
+    .rating_star>span{
+        font-size:10px;
+        /* margin-bottom:51px; */
+
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,145 @@
+.restuarantVist_mainContainer{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    margin:10px ;
+}
+.restuarantVist_mainContainer>div:first-child{
+    width:250px;
+    height: 240px;
+    background-color: white;
+    border-radius: 100%; display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0px -15px 15px red;
+}
+.restuarantVist_mainContainer>div>img{
+    width: 200px;
+}
+
+.restuarantVist_mainContainer>div:last-child{
+    width:230px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 19px gray;
+    border-radius: 10px;
+    position: absolute;
+    bottom:-25%;
+}
+.detailsRestuarantVisit>h3{
+    color:#990000;
+}
+.detailsRestuarantVisit>p{
+    font-size: 13px;
+    color: gray;
+}
+.ratingRestuarent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span {
+  color: rgb(188, 188, 14);
+}
+.button_Favorites{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.Favorites{
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Favorites>div:hover{
+    color: red;
+}
+.button_Favorites>button{
+    background-color: #990000;
+    color: white;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+.button_Favorites>button:hover{
+    background-color:red;
+    color: white;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .restuarantVist_mainContainer{
+        height: 140px;
+        width: 140px;
+    }
+    .restuarantVist_mainContainer>div:first-child{
+        width:140px;
+        height: 140px;
+    }
+    .restuarantVist_mainContainer>div>img{
+        width: 120px;
+    }
+    
+    .restuarantVist_mainContainer>div:last-child{
+        width:140px;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 19px gray;
+        border-radius: 10px;
+        position: absolute;
+        bottom:-60%;
+    }
+    .detailsRestuarantVisit>h3{
+        font-size: 2.5vw;
+        color:#990000;
+    }
+    .detailsRestuarantVisit>p{
+        font-size:2vw;
+        color: gray;
+    }
+    .ratingRestuarent{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .button_Favorites{
+        display: flex;
+        gap:5px;
+        justify-content: space-between;
+    }
+    .Favorites{
+        
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .Favorites>div:hover{
+        color: red;
+    }
+    .button_Favorites>button{
+        background-color: #990000;
+        color: white;
+        border: 0;
+        height: 20px;
+        width: 50px;
+        border-radius: 5px;
+        font-size: 2vw;
+    }
+    .button_Favorites>button:hover{
+        background-color:red;
+        color: white;
+        border: 0;
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+    }
+}
